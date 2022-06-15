@@ -60,8 +60,13 @@ const GlobalStyle = createGlobalStyle`
     border-radius: 0.8rem;
     overflow: hidden;
   }
+  
   img {
     vertical-align: bottom;
+  }
+
+  li {
+    list-style: none;
   }
 
   a:focus,
