@@ -8,7 +8,7 @@ const MainLogoGlobalStyle = createGlobalStyle`
     font-size: 3rem;
   }
 
-  img {
+  h1 > img {
     display: block;
   }
 `;
