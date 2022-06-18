@@ -4,11 +4,11 @@ import logo from "../../../assets/Logo.svg";
 import styled, { createGlobalStyle } from "styled-components";
 
 const MainLogoGlobalStyle = createGlobalStyle`
-  h1 {
+  .header-logo {
     font-size: 3rem;
   }
 
-  h1 > img {
+  .header-logo > a > img {
     display: block;
   }
 `;
@@ -23,7 +23,7 @@ export default function MainLogo() {
   return (
     <>
       <MainLogoGlobalStyle />
-      <h1>
+      <h1 className="header-logo">
         <HomeLink to="/">
           <img src={logo} alt="My Blog" />
         </HomeLink>
