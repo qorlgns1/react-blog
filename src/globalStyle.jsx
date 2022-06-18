@@ -81,6 +81,17 @@ const GlobalStyle = createGlobalStyle`
     background: var(--gray-background-light);
   }
 
+  .hidden {
+    overflow: hidden;
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+  }
+
   .max-width {
     width: 1224px;
     max-width: calc(100% - 4rem);
@@ -117,6 +128,7 @@ const GlobalStyle = createGlobalStyle`
     font-size: 2rem;
     margin-bottom: 2rem;
   }
+
 `;
 
 export default GlobalStyle;
