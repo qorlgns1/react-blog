@@ -36,7 +36,11 @@ function App() {
           <Header isLogin={isLogin} handleLogin={handleLogin} />
           <Banner bannerInfo={loadData.blog} />
           <Switch>
-            <Route path="/" exact component={Home} />
+            <Route
+              path="/"
+              exact
+              render={() => <Home postsInfo={loadData.posts} />}
+            />
             <Route path="/login">
               <div>Login Page</div>
             </Route>
