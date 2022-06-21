@@ -1,6 +1,7 @@
 import React from "react";
 import Posts from "../../components/posts/Posts";
 import { createGlobalStyle } from "styled-components";
+import About from "../../components/user/About";
 
 const HomeGlobalStyle = createGlobalStyle`
   main > .max-width {
@@ -23,6 +24,7 @@ export default function Home({ postsInfo }) {
       <HomeGlobalStyle />
       <div className="max-width">
         <Posts postsInfo={postsInfo} />
+        <About />
       </div>
     </main>
   );
