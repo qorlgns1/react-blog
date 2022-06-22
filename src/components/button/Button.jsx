@@ -1,6 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { createGlobalStyle } from "styled-components";
+import arrowLeftBackButton from "../../assets/ArrowLeft-blue.svg";
+import likeIcon from "../../assets/icon-like.svg";
+import likeWhiteIcon from "../../assets/icon-like-white.svg";
+import modifyIcon from "../../assets/icon-modify.svg";
+import modifyWhiteIcon from "../../assets/icon-modify-white.svg";
+import deleteIcon from "../../assets/icon-delete.svg";
+import deleteWhiteIcon from "../../assets/icon-delete-white.svg";
 
 const ButtonGlobalStyle = createGlobalStyle`
   .button {
@@ -56,6 +63,7 @@ const ButtonGlobalStyle = createGlobalStyle`
       1.6rem;
     transition: all 0.3s;
   }
+
   .btn-save:hover {
     background: var(--main-color) url(../assets/icon-save-white.svg) no-repeat
       2rem 50% / 1.6rem;
@@ -67,7 +75,7 @@ const ButtonGlobalStyle = createGlobalStyle`
     width: 6.4rem;
     height: 6.4rem;
     border-radius: 0 var(--border-radius) var(--border-radius) 0;
-    background: var(--gray-background) url(../assets/ArrowLeft-blue.svg) no-repeat
+    background: var(--gray-background) url(${arrowLeftBackButton}) no-repeat
       50% 50% / 4rem;
     font-size: 1.6rem;
   }
@@ -78,13 +86,13 @@ const ButtonGlobalStyle = createGlobalStyle`
     padding-left: 3rem;
     border: 1px solid rgba(var(--red-rgb), 0.5);
     border-radius: var(--border-radius);
-    background: var(--white-color) url(../assets/icon-like.svg) no-repeat 2.5rem
+    background: var(--white-color) url(${likeIcon}) no-repeat 2.5rem
       50% / 2.4rem;
     transition: all 0.3s;
   }
   .btn-like:hover,
   .btn-like.active {
-    background: var(--red-color) url(../assets/icon-like-white.svg) no-repeat
+    background: var(--red-color) url(${likeWhiteIcon}) no-repeat
       2.5rem 50% / 2.4rem;
     color: var(--white-color);
   }
@@ -102,22 +110,22 @@ const ButtonGlobalStyle = createGlobalStyle`
     transition: all 0.3s;
   }
   .btn-modify {
-    background: var(--gray-background) url(../assets/icon-modify.svg) no-repeat
+    background: var(--gray-background) url(${modifyIcon}) no-repeat
       50% 50% / 1.6rem;
     right: 13rem;
   }
   .btn-modify:hover {
-    background: var(--main-color) url(../assets/icon-modify-white.svg) no-repeat
+    background: var(--main-color) url(${modifyWhiteIcon}) no-repeat
       50% 50% / 1.6rem;
   }
 
   .btn-delete {
-    background: var(--gray-background) url(../assets/icon-delete.svg) no-repeat
+    background: var(--gray-background) url(${deleteIcon}) no-repeat
       50% 50% / 1.6rem;
   }
 
   .btn-delete:hover {
-    background: var(--red-color) url(../assets/icon-delete-white.svg) no-repeat
+    background: var(--red-color) url(${deleteWhiteIcon}) no-repeat
       50% 50% / 1.6rem;
   }
 
