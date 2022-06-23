@@ -10,5 +10,5 @@ const Category = styled.span`
 `;
 
 export default function PostCategory({ children }) {
-  return <Category>children</Category>;
+  return <Category>{children}</Category>;
 }
